@@ -28,10 +28,10 @@ void PortB_Initialize(void)
     ANSELB = 0x00;
     
     /* Disable Rpull-ups */
-    WPUB = 0x0E;
+    WPUB = 0x00;
         
-    /* RB7:RB4, RB0 as output; RB3:RB1 as input */
-    TRISB = 0x0E;
+    /* RB7:RB0 as output */
+    TRISB = 0x00;
 }
 
 /* PortC initialization */
@@ -86,7 +86,7 @@ void PortE_Initialize(void)
 void PortF_Initialize(void)
 {
     /* Clear register */
-    LATF = 0x08;
+    LATF = 0x00;
     
     /* Pins as digital I/O */
     ANSELF = 0x00;
